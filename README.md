@@ -25,10 +25,14 @@ Selective algorithms that make decisions based on input. These exercises practic
 
 ### `repetitivas/`
 
-Repetitive algorithms that execute instructions multiple times. These exercises practice:
+Repetitive algorithms that execute instructions multiple times. The latest commit adds the remaining exercises in this folder:
 
-- Finding the largest number in a series
-- Generating values from a fractional sequence with a `while` loop
+- `repet1.cpp`: Finding the largest number in a series
+- `repet2.cpp`: Summing a fractional series with a `while` loop
+- `repet3.cpp`: Accumulating a total until the value `0` is entered with `do...while`
+- `repet4.cpp`: Counting negative numbers in a sequence until a sentinel is reached
+- `repet5.cpp`: Calculating the average of random numbers generated with `for`
+- `repet6.cpp`: Computing the mean and variance of a set of values
 
 ## Technologies
 
