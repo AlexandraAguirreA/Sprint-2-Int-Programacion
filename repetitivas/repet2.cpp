@@ -3,16 +3,17 @@ using namespace std;
 
 int main(){
 
-    float i=1, num, sum_tot;
+    float i = 1, num, sum_tot = 0;
 
-    cout << "Ingrese el numero que desee sumar a la serie: "<<endl;
+    cout << "Ingrese el numero que desee sumar a la serie: " << endl;
     cin >> num;
 
-    while (i <=num){
-        sum_tot = 1/i;
+    while (i <= num){
+        sum_tot += 1/i;
         i++;
-        cout<<sum_tot;
     }
-    return 0;
 
+    cout << "La suma de la serie es: " << sum_tot << endl;
+
+    return 0;
 }
