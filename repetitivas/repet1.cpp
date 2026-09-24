@@ -1,23 +1,29 @@
-#include <iostream> 
+#include <iostream>
 #include <limits>
+#include <clocale>
 using namespace std;
 
+/*Elabora un algoritmo que encuentre el máximo de N números. Ejemplo: N=5, [3,9,1,8,2]
+→ 9.*/
+
 int main(){
-    
-    int n=0, n_aux=numeric_limits<int>::min(), contador=0, cantidad;
+    setlocale(LC_ALL, "");
 
-    cout << "Ingresa la cantidad de numeros de los quieres calcular el maximo: "<<endl;
-    cin >> cantidad; 
+    int n = 0, n_aux = numeric_limits<int>::min(), contador = 0, cantidad;
 
-    while (contador<cantidad){
-        cout << "Ingresa la serie de numeros 1 por 1: "<<endl;
+    cout << "Ingresa la cantidad de números de los que quieres calcular el máximo: " << endl;
+    cin >> cantidad;
+
+    while (contador < cantidad) {
+        cout << "Ingresa la serie de números, uno por uno: " << endl;
         cin >> n;
-        if (n>n_aux){
+        if (n > n_aux) {
             n_aux = n;
         }
         contador++;
     }
-    cout << "El numero mas grande de tu serie de numeros es: "<< n_aux <<endl;
+
+    cout << "El número más grande de tu serie de números es: " << n_aux << endl;
 
     return 0;
 }
